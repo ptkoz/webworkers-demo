@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.App button {
+  width: 40rem;
+  height: 10rem;
+  margin: 5rem;
+}
+
+.App img {
+  margin-top: 80vh;
+}
