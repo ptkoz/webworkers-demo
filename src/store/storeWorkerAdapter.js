@@ -12,7 +12,6 @@ class StoreWorkerAdapter {
         this.listeners = [];
 
         this.worker.addEventListener("message", (message) => {
-            console.log(message, this.listeners);
             this.lastKnownState = message.data;
             for (let listener of this.listeners) {
                 listener();
@@ -25,7 +24,6 @@ class StoreWorkerAdapter {
     }
 
     subscribe = (listener) => {
-        console.log('Someone subscribed!');
         this.listeners.push(listener)
 
         return () => {
@@ -34,7 +32,6 @@ class StoreWorkerAdapter {
     }
 
     getState = () => {
-        console.log('Someone received state', this.lastKnownState);
         return this.lastKnownState;
     }
 }

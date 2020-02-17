@@ -5,7 +5,7 @@ import App from './components/AppConnector';
 import {Provider} from "react-redux";
 
 // use either store run in the worker
-import store from "./store/storeWorkerAdapter";
+// import store from "./store/storeWorkerAdapter";
 
 // or just use store like usual
 import store from "./store/store";
