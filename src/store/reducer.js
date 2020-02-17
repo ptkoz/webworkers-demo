@@ -9,7 +9,7 @@ export const reducer = handleActions(
     {
         [increment]: (state, action) => {
             let newState = { ...state };
-            for (let i = 0; i < 100000000; i++) {
+            for (let i = 0; i < 200000000; i++) {
                 newState = {...state, counter: state.counter + action.payload.amount};;
             }
 
@@ -17,7 +17,7 @@ export const reducer = handleActions(
         },
         [decrement]: (state, action) => {
             let newState = { ...state };
-            for (let i = 0; i < 100000000; i++) {
+            for (let i = 0; i < 200000000; i++) {
                 newState = {...state, counter: state.counter - action.payload.amount};;
             }
 
