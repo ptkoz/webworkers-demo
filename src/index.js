@@ -4,11 +4,8 @@ import './index.css';
 import App from './components/AppConnector';
 import {Provider} from "react-redux";
 
-// use either store run in the worker
-import store from "./store/storeWorkerAdapter";
-
-// or just use store like usual
-// import store from "./store/store";
+import store from "./store/store"; // use regular store
+// import store from "./store/storeWorkerAdapter"; // use "worker" store
 
 ReactDOM.render(
     <Provider store={store}>

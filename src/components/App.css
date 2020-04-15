@@ -2,10 +2,15 @@
   text-align: center;
 }
 
+.App h1 {
+  font-size: 5rem;
+}
+
 .App button {
   width: 40rem;
   height: 10rem;
   margin: 5rem;
+  font-size: 4rem;
 }
 
 .App img {

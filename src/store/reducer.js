@@ -16,12 +16,7 @@ export const reducer = handleActions(
             return newState;
         },
         [decrement]: (state, action) => {
-            let newState = { ...state };
-            for (let i = 0; i < 200000000; i++) {
-                newState = {...state, counter: state.counter - action.payload.amount};;
-            }
-
-            return newState;
+            return {...state, counter: state.counter - action.payload.amount};
         },
     },
     defaultState
